@@ -3,6 +3,12 @@ import PropTypes from 'prop-types';
 import './index.css';
 
 export class Button extends Component{
+  static propTypes = {
+    text: PropTypes.string
+  }
+  static defaultProps = {
+    text:'123'
+  }
   constructor(props){
     super(props)
     this.state={
@@ -17,9 +23,4 @@ export class Button extends Component{
     )
   }
 }
-
-// Button.propTypes = {
-//   text: PropTypes.any
-// };
-
 export default Button;

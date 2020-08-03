@@ -1,31 +1,30 @@
 {
-<<<<<<< HEAD
   "name": "satd-design",
-  "version": "0.0.2",
-  "private": false,
-  "description": "A react-Design UI library for React by myself",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A Design UI library for React by myself",
   "main": "lib/index.js",
   "module": "esm/index.js",
-  "keywords": [
-    "react",
-    "satd-design",
-    "satd",
-    "ui"
-  ],
+  "author": "Mrxiiaobai",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mrxiiaobai/satd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mrxiiaobai/satd/issues"
+  },
   "files": [
     "esm",
     "lib"
   ],
-  "peerDependencies": {
-    "react": ">=16.0.0",
-    "react-dom": ">=16.0.0"
-  },
-  "homepage": "https://github.com/Mrxiiaobai/satd#readme",
-=======
-  "name": "satd",
-  "version": "0.1.0",
-  "private": true,
->>>>>>> add-license-1
+  "keywords": [
+    "react-ui",
+    "react-component",
+    "ui",
+    "satd",
+    "satd-design"
+  ],
   "dependencies": {
     "@svgr/webpack": "4.3.3",
     "@testing-library/jest-dom": "^4.2.4",
@@ -93,18 +92,6 @@
     "copy-css:esm": "cpx \"src/components/**/*.css\" esm",
     "copy-css:lib": "cpx \"src/components/**/*.css\" lib"
   },
-<<<<<<< HEAD
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Mrxiiaobai/satd.git"
-  },
-  "author": "Mrxiiaobai",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Mrxiiaobai/satd/issues"
-  },
-=======
->>>>>>> add-license-1
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -119,7 +106,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-<<<<<<< HEAD
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
@@ -130,56 +116,8 @@
     "cpx": "^1.5.0",
     "cross-env": "^7.0.2"
   },
-  "jest": {
-    "roots": [
-      "<rootDir>/src"
-    ],
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx,ts,tsx}",
-      "!src/**/*.d.ts"
-    ],
-    "setupFiles": [
-      "react-app-polyfill/jsdom"
-    ],
-    "setupFilesAfterEnv": [
-      "<rootDir>/src/setupTests.js"
-    ],
-    "testMatch": [
-      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
-      "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
-    ],
-    "testEnvironment": "jest-environment-jsdom-fourteen",
-    "transform": {
-      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
-      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-      "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
-    },
-    "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
-      "^.+\\.module\\.(css|sass|scss)$"
-    ],
-    "modulePaths": [],
-    "moduleNameMapper": {
-      "^react-native$": "react-native-web",
-      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
-    },
-    "moduleFileExtensions": [
-      "web.js",
-      "js",
-      "web.ts",
-      "ts",
-      "web.tsx",
-      "tsx",
-      "json",
-      "web.jsx",
-      "jsx",
-      "node"
-    ],
-    "watchPlugins": [
-      "jest-watch-typeahead/filename",
-      "jest-watch-typeahead/testname"
-    ]
-=======
->>>>>>> add-license-1
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
   }
 }
