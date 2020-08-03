@@ -7,7 +7,7 @@ export class Button extends Component{
     text: PropTypes.string
   }
   static defaultProps = {
-    text:'123'
+    value:'按钮'
   }
   constructor(props){
     super(props)
@@ -17,9 +17,9 @@ export class Button extends Component{
   }
 
   render(){
-    const {text} = this.props
+    const {children,value} = this.props
     return (
-      <button className="btn">这是一个组件按钮{text}</button>  
+      <button className="btn">{value?value:children}</button>  
     )
   }
 }

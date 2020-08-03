@@ -1,7 +1,7 @@
 {
   "name": "satd-design",
-  "version": "0.0.1",
-  "private": true,
+  "version": "0.0.3",
+  "private": false,
   "description": "A Design UI library for React by myself",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -26,6 +26,16 @@
     "satd-design"
   ],
   "dependencies": {
+    "@babel/code-frame": "^7.10.4",
+    "@babel/core": "^7.11.0",
+    "@babel/helper-plugin-utils": "^7.10.4",
+    "@babel/highlight": "^7.10.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/types": "^7.11.0",
+    "@emotion/core": "^10.0.28",
     "@svgr/webpack": "4.3.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -40,6 +50,9 @@
     "camelcase": "^5.3.1",
     "case-sensitive-paths-webpack-plugin": "2.3.0",
     "css-loader": "3.4.2",
+    "docz": "^2.3.1",
+    "docz-plugin-css": "^0.11.0",
+    "docz-theme-default": "^1.2.0",
     "dotenv": "8.2.0",
     "dotenv-expand": "5.1.0",
     "eslint": "^6.6.0",
@@ -90,7 +103,9 @@
     "build:commonjs": "cross-env BABEL_OUTPUT=commonjs babel src/components --out-dir lib/ --ignore **/__tests__,**/__mocks__",
     "build:esm": "babel src/components --out-dir esm/ --ignore **/__tests__,**/__mocks__",
     "copy-css:esm": "cpx \"src/components/**/*.css\" esm",
-    "copy-css:lib": "cpx \"src/components/**/*.css\" lib"
+    "copy-css:lib": "cpx \"src/components/**/*.css\" lib",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -113,11 +128,15 @@
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
+    "@emotion/core": "^10.0.28",
     "cpx": "^1.5.0",
-    "cross-env": "^7.0.2"
+    "cross-env": "^7.0.2",
+    "docz": "^2.3.1",
+    "docz-plugin-css": "^0.11.0",
+    "docz-theme-default": "^1.2.0"
   },
   "peerDependencies": {
-    "react": ">=16.0.0",
-    "react-dom": ">=16.0.0"
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   }
 }

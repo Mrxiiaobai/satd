@@ -23,6 +23,8 @@
 /esm
 /lib
 
+/.docz
+
 # misc
 .DS_Store
 .env.local
