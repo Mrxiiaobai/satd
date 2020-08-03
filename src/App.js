@@ -1,12 +1,13 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from 'react';
+import { Button } from './components';
 
-function App() {
-  return (
-    <div className="App">
-      app
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        hello
+        <Button text={'qwer'}></Button>
+      </div>
+    );
+  }
 }
-
-export default App;
